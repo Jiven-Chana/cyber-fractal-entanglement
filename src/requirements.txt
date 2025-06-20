@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+networkx
+matplotlib
+nolds
+scikit-learn
+statsmodels
+yfinance
