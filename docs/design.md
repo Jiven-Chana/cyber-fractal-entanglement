@@ -51,3 +51,22 @@ When it might be OK to leave them
 When you should clean them
 	•	Final prototype / paper: stick to the fractal theory and clip (or winsorize) to [1,2]. That way your covariance network reflects genuine “roughness” co-movements, not numerical artifacts.
 	•	Robustness: if you ever push this toward production, you’ll want a systematic winsorization or a robust covariance estimator (e.g. Minimum Covariance Determinant) to guard against any stray FD blow-ups.
+
+
+(poc_env) (base) jivenchana@Jivens-MacBook-Air cyber-fractal-entanglement % python src/validate_ct.py --c_series data/processed/C_series_diff.csv     --threshold -0.02 --horizon 5
+2025-06-21 20:14:08,377 INFO Loaded prices (783) and C-series (655)
+2025-06-21 20:14:08,428 INFO Computed drawdown labels
+2025-06-21 20:14:08,441 INFO Aligned data: 655 observations
+/Users/jivenchana/PycharmProjects/cyber-fractal-entanglement/poc_env/lib/python3.12/site-packages/statsmodels/tsa/stattools.py:1556: FutureWarning: verbose is deprecated since functions should not print results
+  warnings.warn(
+2025-06-21 20:14:08,450 INFO Granger lag=1 p-value=0.9122
+2025-06-21 20:14:08,453 INFO Granger lag=2 p-value=0.4879
+2025-06-21 20:14:08,455 INFO Granger lag=3 p-value=0.6637
+2025-06-21 20:14:08,458 INFO Granger lag=4 p-value=0.5753
+2025-06-21 20:14:08,461 INFO Granger lag=5 p-value=0.6950
+2025-06-21 20:14:08,950 INFO Saved ROC curve (AUC=0.567)
+2025-06-21 20:14:08,989 INFO Logistic regression p-value=0.0470, CV AUC=0.582
+2025-06-21 20:14:08,989 INFO Validation complete. See reports in reports/validation
+(poc_env) (base) jivenchana@Jivens-MacBook-Air cyber-fractal-entanglement % 
+
+First big win!! we have some metrics that differenced C(t) works in terms of capturing short term spikes in entanglement can precede drawdowns. 
