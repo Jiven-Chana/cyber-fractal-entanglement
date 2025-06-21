@@ -1,0 +1,23 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+poc_env/
+venv/
+.env/
+
+# IDE directories
+.idea/
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Leave your data and reports in the repo:
+# data/raw/
+# data/processed/
+# reports/
