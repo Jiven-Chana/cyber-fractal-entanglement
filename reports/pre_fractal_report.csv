@@ -1,0 +1,11 @@
+check,asset,result,value
+min_length,ALL,True,783.0
+zero_variance,SPX,True,439723.4431973356
+zero_variance,GOLD,True,83703.41528522709
+zero_variance,BTC,True,433623491.3016905
+extreme_outliers,SPX,True,0.0
+extreme_outliers,GOLD,True,0.0
+extreme_outliers,BTC,True,0.0
+adf_stationarity,SPX,False,0.9695217452664487
+adf_stationarity,GOLD,False,0.9862876050570751
+adf_stationarity,BTC,False,0.9798660416404176
