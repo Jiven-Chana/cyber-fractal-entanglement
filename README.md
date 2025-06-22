@@ -1,8 +1,3 @@
-Below is a fully fleshed-out, polished README template you can drop into the root of your repo (README.md). It dives into each module, shows how to run everything, explains key findings/insights, and presents next steps clearly—making it compelling both as documentation and as a project narrative.
-
-⸻
-
-
 # Cyber-Fractal Entanglement 🧠⚛️📉
 
 **Detecting Systemic Coupling and Market Drawdowns Using Fractal Geometry & Quantum Mutual Information**
